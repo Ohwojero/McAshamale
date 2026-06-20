@@ -133,16 +133,16 @@ export default function ImageCarousel() {
       </div>
 
       {/* ── Hero content ── */}
-      <div className={`relative z-10 w-full max-w-3xl mx-auto px-5 sm:px-8 text-center pt-20 pb-16 sm:pt-28 sm:pb-20 transition-opacity duration-700 ${contentVisible ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`relative z-10 w-full max-w-3xl mx-auto px-6 sm:px-8 text-center pt-28 pb-20 sm:pt-32 sm:pb-24 transition-opacity duration-700 ${contentVisible ? 'opacity-100' : 'opacity-0'}`}>
 
         {/* Badge */}
-        <div className="mb-3 sm:mb-5 inline-flex flex-col items-center animate-fadeInDown" style={{ animationDelay: '100ms' }}>
-          <span className="text-[10px] font-bold tracking-[0.35em] text-white/60 uppercase">Presented by</span>
-          <span className="text-primary text-sm sm:text-base font-black tracking-widest uppercase">Team Loyalty</span>
+        <div className="mb-5 sm:mb-6 inline-flex flex-col items-center animate-fadeInDown" style={{ animationDelay: '100ms' }}>
+          <span className="text-[11px] font-bold tracking-[0.35em] text-white/60 uppercase">Presented by</span>
+          <span className="text-primary text-base sm:text-lg font-black tracking-widest uppercase">Team Loyalty</span>
         </div>
 
         {/* Title */}
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-2 sm:mb-3 leading-tight text-white animate-fadeInUp" style={{ animationDelay: '200ms' }}>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-4 leading-tight text-white animate-fadeInUp" style={{ animationDelay: '200ms' }}>
           Comedy Special:<br />
           <span className="text-primary">
             {typedText}
@@ -151,7 +151,7 @@ export default function ImageCarousel() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xs sm:text-base text-white/80 mb-5 sm:mb-6 font-light">
+        <p className="text-sm sm:text-base text-white/80 mb-8 sm:mb-8 font-light">
           {'Hosted by MC Ashamale'.split(' ').map((word, i) => (
             <span
               key={i}
@@ -168,20 +168,20 @@ export default function ImageCarousel() {
         </p>
 
         {/* CTA buttons */}
-        <div className="flex flex-col xs:flex-row gap-2 sm:gap-3 justify-center mb-5 sm:mb-7 animate-fadeInUp" style={{ animationDelay: '900ms' }}>
+        <div className="flex flex-col xs:flex-row gap-3 justify-center mb-6 sm:mb-8 animate-fadeInUp" style={{ animationDelay: '900ms' }}>
           <div className="relative inline-flex justify-center w-full xs:w-auto">
             <span className="absolute inset-0 rounded-lg bg-primary/40 animate-pulseRing" />
             <span className="absolute inset-0 rounded-lg bg-primary/20 animate-pulseRing" style={{ animationDelay: '0.6s' }} />
             <button
               onClick={() => document.getElementById('tickets')?.scrollIntoView({ behavior: 'smooth' })}
-              className="relative w-full xs:w-auto px-6 py-3 sm:py-3.5 bg-primary hover:bg-primary/90 text-white font-bold text-sm sm:text-base rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-xl hover:shadow-primary/40 z-10"
+              className="relative w-full xs:w-auto px-7 py-4 bg-primary hover:bg-primary/90 text-white font-bold text-base rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-xl hover:shadow-primary/40 z-10"
             >
               🎟️ Get Tickets Now
             </button>
           </div>
           <button
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-            className="w-full xs:w-auto px-6 py-3 sm:py-3.5 border border-white/30 text-white hover:bg-white/10 hover:border-white/60 font-bold text-sm sm:text-base rounded-lg transition-all duration-200 backdrop-blur-sm"
+            className="w-full xs:w-auto px-7 py-4 border border-white/30 text-white hover:bg-white/10 hover:border-white/60 font-bold text-base rounded-lg transition-all duration-200 backdrop-blur-sm"
           >
             Learn More
           </button>
@@ -190,7 +190,7 @@ export default function ImageCarousel() {
         {/* Event info pills — hidden on mobile, visible sm+ */}
         <div className="hidden sm:flex flex-wrap justify-center gap-2 text-xs text-white/70 animate-fadeInUp" style={{ animationDelay: '1000ms' }}>
           {[
-            { icon: <MapPin className="w-3 h-3 text-primary" />, text: 'Fiesta Cinema' },
+            { icon: <MapPin className="w-3 h-3 text-primary" />, text: 'Fiesta Cinema, Ughelli' },
             { icon: <Calendar className="w-3 h-3 text-primary" />, text: 'Sunday, July 5th' },
             { icon: <Clock className="w-3 h-3 text-primary" />, text: '4PM – 8PM' },
           ].map(({ icon, text }) => (
@@ -202,7 +202,7 @@ export default function ImageCarousel() {
         </div>
 
         {/* Mini countdown — hidden on mobile, visible sm+ */}
-        <div className="hidden sm:block mt-6 sm:mt-7 pt-5 sm:pt-6 border-t border-white/10 animate-fadeInUp" style={{ animationDelay: '1100ms' }}>
+        <div className="hidden sm:block mt-7 pt-6 border-t border-white/10 animate-fadeInUp" style={{ animationDelay: '1100ms' }}>
           <p className="text-white/50 text-[10px] mb-3 font-semibold tracking-[0.3em] uppercase">The Show Starts In</p>
           <div className="grid grid-cols-4 gap-2 max-w-[280px] sm:max-w-xs mx-auto">
             {[
@@ -211,8 +211,8 @@ export default function ImageCarousel() {
               { value: timeLeft.minutes, label: 'Mins' },
               { value: timeLeft.seconds, label: 'Secs' },
             ].map((item) => (
-              <div key={item.label} className="bg-black/30 border border-white/10 rounded-lg p-1.5 sm:p-2 text-center backdrop-blur-sm hover:border-primary/40 transition-colors duration-300">
-                <div className="text-lg sm:text-xl font-black text-primary leading-none">
+              <div key={item.label} className="bg-black/30 border border-white/10 rounded-lg p-2 text-center backdrop-blur-sm hover:border-primary/40 transition-colors duration-300">
+                <div className="text-xl font-black text-primary leading-none">
                   {String(item.value).padStart(2, '0')}
                 </div>
                 <div className="text-[9px] text-white/50 uppercase tracking-wider font-semibold mt-0.5">{item.label}</div>

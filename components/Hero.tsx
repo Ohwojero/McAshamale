@@ -49,7 +49,7 @@ export default function Hero({ onGetTickets }: HeroProps) {
         <div className="flex flex-col sm:flex-row gap-6 justify-center text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
             <MapPin className="w-5 h-5 text-accent" />
-            <span>Fiesta Cinema</span>
+            <span>Fiesta Cinema, Ughelli, Delta State</span>
           </div>
           <div className="flex items-center gap-2">
             <Calendar className="w-5 h-5 text-accent" />

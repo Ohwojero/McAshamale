@@ -38,7 +38,7 @@ const detailCards = [
     icon: MapPin,
     title: 'Venue',
     sub: null,
-    value: 'Fiesta Cinema',
+    value: 'Fiesta Cinema, Ughelli, Delta State',
     extra: 'Premium cinema experience',
   },
 ];

@@ -44,7 +44,7 @@ const contactRows = [
 ];
 
 const eventDetails = [
-  { icon: MapPin,   label: 'VENUE', value: 'Fiesta Cinema, Ughelli' },
+  { icon: MapPin,   label: 'VENUE', value: 'Fiesta Cinema, Ughelli, Delta State' },
   { icon: Calendar, label: 'DATE',  value: 'Sunday, July 5th, 2026' },
   { icon: Clock,    label: 'TIME',  value: '4:00 PM – 8:00 PM' },
 ];
@@ -191,7 +191,7 @@ export default function Contact() {
             © 2026 <span className="font-bold text-foreground">Team Loyalty</span>. All rights reserved.
           </p>
           <p className="text-center">
-            Comedy Special: My <span className="text-primary font-semibold">Abroad</span> Xperience — July 5th, Fiesta Cinema
+            Comedy Special: My <span className="text-primary font-semibold">Abroad</span> Xperience — July 5th, Fiesta Cinema, Ughelli
           </p>
           <a
             href="https://wa.me/2347080979456"
