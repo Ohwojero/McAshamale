@@ -5,18 +5,18 @@ import Image from 'next/image';
 import { ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
 
 const allImages = [
-  { id: 1, src: '/mc1 (1).jpeg', alt: 'MC Ashamale portrait 1', category: 'Host' },
-  { id: 2, src: '/mc1 (2).jpeg', alt: 'MC Ashamale portrait 2', category: 'Host' },
-  { id: 3, src: '/mc1 (3).jpeg', alt: 'MC Ashamale portrait 3', category: 'Host' },
-  { id: 4, src: '/WhatsApp Image 2026-06-21 at 1.33.04 PM.jpeg',    alt: 'MC Ashamale lifestyle 1', category: 'Lifestyle' },
-  { id: 5, src: '/WhatsApp Image 2026-06-21 at 1.33.04 PM (1).jpeg', alt: 'MC Ashamale lifestyle 2', category: 'Lifestyle' },
-  { id: 6, src: '/WhatsApp Image 2026-06-21 at 1.33.04 PM (2).jpeg', alt: 'MC Ashamale lifestyle 3', category: 'Lifestyle' },
-  { id: 7, src: '/WhatsApp Image 2026-06-21 at 1.33.05 PM.jpeg',    alt: 'MC Ashamale lifestyle 4', category: 'Lifestyle' },
-  { id: 8, src: '/WhatsApp Image 2026-06-21 at 1.33.05 PM (1).jpeg', alt: 'MC Ashamale lifestyle 5', category: 'Lifestyle' },
-  { id: 9, src: '/WhatsApp Image 2026-06-21 at 1.33.05 PM (2).jpeg', alt: 'MC Ashamale lifestyle 6', category: 'Lifestyle' },
-  { id: 10, src: '/WhatsApp Image 2026-06-21 at 1.33.06 PM.jpeg',    alt: 'MC Ashamale lifestyle 7', category: 'Lifestyle' },
-  { id: 11, src: '/WhatsApp Image 2026-06-21 at 1.33.06 PM (1).jpeg', alt: 'MC Ashamale lifestyle 8', category: 'Lifestyle' },
-  { id: 12, src: '/WhatsApp Image 2026-06-21 at 1.33.06 PM (2).jpeg', alt: 'MC Ashamale lifestyle 9', category: 'Lifestyle' },
+  { id: 1, src: '/mc1 (1).jpeg', alt: 'The Man Himself', category: 'MC Ashamale' },
+  { id: 2, src: '/mc1 (2).jpeg', alt: 'Comedy King', category: 'MC Ashamale' },
+  { id: 3, src: '/mc1 (3).jpeg', alt: 'Your Host for the Night', category: 'MC Ashamale' },
+  { id: 4, src: '/WhatsApp Image 2026-06-21 at 1.33.04 PM.jpeg',    alt: 'Living the Abroad Life', category: 'Lifestyle' },
+  { id: 5, src: '/WhatsApp Image 2026-06-21 at 1.33.04 PM (1).jpeg', alt: 'Around the World', category: 'Lifestyle' },
+  { id: 6, src: '/WhatsApp Image 2026-06-21 at 1.33.04 PM (2).jpeg', alt: 'Good Vibes Only', category: 'Lifestyle' },
+  { id: 7, src: '/WhatsApp Image 2026-06-21 at 1.33.05 PM.jpeg',    alt: 'The Abroad Experience', category: 'Lifestyle' },
+  { id: 8, src: '/WhatsApp Image 2026-06-21 at 1.33.05 PM (1).jpeg', alt: 'Making Memories', category: 'Lifestyle' },
+  { id: 9, src: '/WhatsApp Image 2026-06-21 at 1.33.05 PM (2).jpeg', alt: 'Owning Every Room', category: 'Lifestyle' },
+  { id: 10, src: '/WhatsApp Image 2026-06-21 at 1.33.06 PM.jpeg',    alt: 'International Vibes', category: 'Lifestyle' },
+  { id: 11, src: '/WhatsApp Image 2026-06-21 at 1.33.06 PM (1).jpeg', alt: 'Beyond Borders', category: 'Lifestyle' },
+  { id: 12, src: '/WhatsApp Image 2026-06-21 at 1.33.06 PM (2).jpeg', alt: 'The Journey Continues', category: 'Lifestyle' },
 ];
 
 // First 3 shown in the portrait grid, rest in the carousel
