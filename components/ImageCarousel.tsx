@@ -94,7 +94,7 @@ export default function ImageCarousel() {
       {/* ── Floating ambient blobs ── */}
       <div className="absolute top-10 left-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-floatBlob pointer-events-none" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary/8 rounded-full blur-3xl animate-floatBlobSlow pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-primary/5 rounded-full blur-3xl animate-floatBlob pointer-events-none" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-primary/5 rounded-full blur-3xl pointer-events-none" style={{ animationName: 'floatBlob', animationDuration: '8s', animationTimingFunction: 'ease-in-out', animationIterationCount: 'infinite', animationDelay: '3s' }} />
 
       {/* ── Carousel background ── */}
       <div
@@ -136,13 +136,13 @@ export default function ImageCarousel() {
       <div className={`relative z-10 w-full max-w-3xl mx-auto px-6 sm:px-8 text-center pt-28 pb-20 sm:pt-32 sm:pb-24 transition-opacity duration-700 ${contentVisible ? 'opacity-100' : 'opacity-0'}`}>
 
         {/* Badge */}
-        <div className="mb-5 sm:mb-6 inline-flex flex-col items-center animate-fadeInDown" style={{ animationDelay: '100ms' }}>
+        <div className="mb-5 sm:mb-6 inline-flex flex-col items-center" style={{ animationName: 'fadeInDown', animationDuration: '0.6s', animationTimingFunction: 'ease-out', animationFillMode: 'forwards', animationDelay: '100ms', opacity: 0 }}>
           <span className="text-[11px] font-bold tracking-[0.35em] text-white/60 uppercase">Presented by</span>
           <span className="text-primary text-base sm:text-lg font-black tracking-widest uppercase">Team Loyalty</span>
         </div>
 
         {/* Title */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-4 leading-tight text-white animate-fadeInUp" style={{ animationDelay: '200ms' }}>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight text-white" style={{ animationName: 'fadeInUp', animationDuration: '0.6s', animationTimingFunction: 'ease-out', animationFillMode: 'forwards', animationDelay: '200ms', opacity: 0 }}>
           Comedy Special:<br />
           <span className="text-primary">
             {typedText}
@@ -157,7 +157,10 @@ export default function ImageCarousel() {
               key={i}
               className="inline-block mr-1"
               style={{
-                animation: contentVisible ? `wordReveal 0.4s ease-out forwards` : 'none',
+                animationName: contentVisible ? 'wordReveal' : 'none',
+                animationDuration: '0.4s',
+                animationTimingFunction: 'ease-out',
+                animationFillMode: 'forwards',
                 animationDelay: `${600 + i * 80}ms`,
                 opacity: 0,
               }}
@@ -168,10 +171,10 @@ export default function ImageCarousel() {
         </p>
 
         {/* CTA buttons */}
-        <div className="flex flex-col xs:flex-row gap-3 justify-center mb-6 sm:mb-8 animate-fadeInUp" style={{ animationDelay: '900ms' }}>
+        <div className="flex flex-col xs:flex-row gap-3 justify-center mb-6 sm:mb-8" style={{ animationName: 'fadeInUp', animationDuration: '0.6s', animationTimingFunction: 'ease-out', animationFillMode: 'forwards', animationDelay: '900ms', opacity: 0 }}>
           <div className="relative inline-flex justify-center w-full xs:w-auto">
             <span className="absolute inset-0 rounded-lg bg-primary/40 animate-pulseRing" />
-            <span className="absolute inset-0 rounded-lg bg-primary/20 animate-pulseRing" style={{ animationDelay: '0.6s' }} />
+            <span className="absolute inset-0 rounded-lg bg-primary/20" style={{ animationName: 'pulseRing', animationDuration: '1.8s', animationTimingFunction: 'ease-out', animationIterationCount: 'infinite', animationDelay: '0.6s' }} />
             <button
               onClick={() => document.getElementById('tickets')?.scrollIntoView({ behavior: 'smooth' })}
               className="relative w-full xs:w-auto px-7 py-4 bg-primary hover:bg-primary/90 text-white font-bold text-base rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-xl hover:shadow-primary/40 z-10"
@@ -188,7 +191,7 @@ export default function ImageCarousel() {
         </div>
 
         {/* Event info pills — hidden on mobile, visible sm+ */}
-        <div className="hidden sm:flex flex-wrap justify-center gap-2 text-xs text-white/70 animate-fadeInUp" style={{ animationDelay: '1000ms' }}>
+        <div className="hidden sm:flex flex-wrap justify-center gap-2 text-xs text-white/70" style={{ animationName: 'fadeInUp', animationDuration: '0.6s', animationTimingFunction: 'ease-out', animationFillMode: 'forwards', animationDelay: '1000ms', opacity: 0 }}>
           {[
             { icon: <MapPin className="w-3 h-3 text-primary" />, text: 'Fiesta Cinema, Ughelli' },
             { icon: <Calendar className="w-3 h-3 text-primary" />, text: 'Sunday, July 5th' },
@@ -202,7 +205,7 @@ export default function ImageCarousel() {
         </div>
 
         {/* Mini countdown — hidden on mobile, visible sm+ */}
-        <div className="hidden sm:block mt-7 pt-6 border-t border-white/10 animate-fadeInUp" style={{ animationDelay: '1100ms' }}>
+        <div className="hidden sm:block mt-7 pt-6 border-t border-white/10" style={{ animationName: 'fadeInUp', animationDuration: '0.6s', animationTimingFunction: 'ease-out', animationFillMode: 'forwards', animationDelay: '1100ms', opacity: 0 }}>
           <p className="text-white/50 text-[10px] mb-3 font-semibold tracking-[0.3em] uppercase">The Show Starts In</p>
           <div className="grid grid-cols-4 gap-2 max-w-[280px] sm:max-w-xs mx-auto">
             {[

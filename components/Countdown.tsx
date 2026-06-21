@@ -118,13 +118,13 @@ export default function Countdown() {
       </div>
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-xs font-bold tracking-[0.35em] text-primary uppercase mb-3 animate-fadeInUp">
+        <p className="text-xs font-bold tracking-[0.35em] text-primary uppercase mb-3" style={{ animationName: 'fadeInUp', animationDuration: '0.6s', animationTimingFunction: 'ease-out', animationFillMode: 'forwards', opacity: 0 }}>
           Don't Miss It
         </p>
-        <h2 className="text-4xl sm:text-5xl font-black mb-2 animate-fadeInUp" style={{ animationDelay: '100ms' }}>
+        <h2 className="text-4xl sm:text-5xl font-black mb-2" style={{ animationName: 'fadeInUp', animationDuration: '0.6s', animationTimingFunction: 'ease-out', animationFillMode: 'forwards', animationDelay: '100ms', opacity: 0 }}>
           The Show Starts In
         </h2>
-        <p className="text-muted-foreground mb-14 animate-fadeInUp" style={{ animationDelay: '200ms' }}>
+        <p className="text-muted-foreground mb-14" style={{ animationName: 'fadeInUp', animationDuration: '0.6s', animationTimingFunction: 'ease-out', animationFillMode: 'forwards', animationDelay: '200ms', opacity: 0 }}>
           Comedy Special: My <span className="text-primary font-semibold">Abroad</span> Xperience — July 5th, 2026
         </p>
 
@@ -136,7 +136,7 @@ export default function Countdown() {
           <FlipCard value={timeLeft.seconds} label="Seconds" />
         </div>
 
-        <p className="text-muted-foreground mt-14 text-sm animate-fadeInUp" style={{ animationDelay: '400ms' }}>
+        <p className="text-muted-foreground mt-14 text-sm" style={{ animationName: 'fadeInUp', animationDuration: '0.6s', animationTimingFunction: 'ease-out', animationFillMode: 'forwards', animationDelay: '400ms', opacity: 0 }}>
           ✨ Don&apos;t miss this unforgettable comedy experience with surprise guests! ✨
         </p>
       </div>
